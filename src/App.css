@@ -1,5 +1,6 @@
 .App {
   margin: 0;
+  font: 'Poppins', sans-serif;
 }
 
 
@@ -10,7 +11,9 @@ nav {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-
+.gray {
+  color: #918E9B;
+}
 .intro {
   padding: 0.8rem 2rem;
   display: flex;
@@ -27,4 +30,57 @@ nav {
 
 .intro--banner {
   max-width: 650px;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card--image {
+  height: 16rem;
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 16px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
